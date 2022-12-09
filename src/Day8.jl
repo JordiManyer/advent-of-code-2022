@@ -1,5 +1,6 @@
 module Day8
 
+using Aoc22.Types
 using Aoc22.Helpers
 
 export day8
@@ -17,12 +18,6 @@ function parse_input(filename::String)
     end
     return H
 end
-
-abstract type Direction end
-struct Up <: Direction end
-struct Down <: Direction end
-struct Left <: Direction end
-struct Right <: Direction end
 
 function is_visible(::Up,H::Matrix{Int8},I::CartesianIndex) :: Bool
     return all(H[I] .> H[1:I[1]-1,I[2]])
