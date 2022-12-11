@@ -12,6 +12,7 @@ include("Day7.jl")
 include("Day8.jl")
 include("Day9.jl")
 include("Day10.jl")
+include("Day11.jl")
 
 using Aoc22.Types
 using Aoc22.Helpers
@@ -26,5 +27,6 @@ using Aoc22.Day7; export day7
 using Aoc22.Day8; export day8
 using Aoc22.Day9; export day9
 using Aoc22.Day10; export day10
+using Aoc22.Day11; export day11
 
 end
